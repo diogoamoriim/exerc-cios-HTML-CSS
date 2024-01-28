@@ -1,0 +1,51 @@
+@charset "UTF-88";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    
+    background-image: linear-gradient(to right, white, #c7c7c7, #787878);
+}
+
+main {
+    /*
+    Cria um fundo em forma de degrade/gradiente.
+    background-image: linear-gradient(to right, #F6F4F3, #c7c7c7, silver, #c7c7c7, #F6F4F3);
+    */
+
+    /*Arredonda os cantos de uma caixa/box. */
+    border-radius: 10px;
+
+    background-color: aliceblue;
+
+    /*Aplica uma borda sombreada*/
+    box-shadow: 5px 5px 15px rgb(54, 54, 54);
+
+    /*Largura*/
+    width: 600px;
+
+    /*Acolchoamento*/
+    padding: 10px;
+
+    /*Centraliza o elemento independente do tamanho da tela*/
+    margin: auto;
+}
+p {
+    text-align: justify;
+}
+
+h1 {
+    color: #575757;
+    text-align: center;
+    text-shadow: 1px 1px 2px #2e2e2e;
+}
+
+h2 {
+    color: #989797;
+}
+
+h5 {
+    text-align: center;
+}

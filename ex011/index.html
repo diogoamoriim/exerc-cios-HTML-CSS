@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <!-- o source tem que ser um acima do outro causando assim quase um evente condicional. foto g padrão, maxímo de 1000px usa foto m, até 750, usar foto p. -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png"  alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em html 5</p>
+
+    <p>
+    A maneira mais fácil de reproduzir um áudio é utilizando a tag "< a u d i o >"
+    s r c= local do arquivo de áudio. passar o parametro "c o n t r o l s" para mostrar os controles de play/pause volume e etc... e passar o parametro "autoplay" para o áudio auto-iniciar. 
+    Podemos utilizar outra maneira também.
+    </p>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <!--Podendo adicionar vários source com vários formatos de arquivos, porém, vale lembrar que a ordem de tentativa de carregamento é de cima para baixo.-->
+    </audio>
+</body>
+</html>
